@@ -5,7 +5,6 @@ import numpy as np
 from PIL import Image
 import SessionState
 
-
 # Parámetros
 activities = ["Seleccione", "Iniciar"]
 triangulos=Image.open("triangulos2.png")
@@ -45,11 +44,15 @@ def main():
 		st.image(triangulos, caption=' ', use_column_width=True)
 
 		input_string1 = st.text_input("Tu respuesta a la misión 1")
+		input_string1 = input_string1.lower()
+
 		if input_string1=='18':
 			st.subheader("Felicitaciones. Has superado la primera prueba. Ahora tendrás que estimular tu creatividad, el pensamiento lateral.")
 			st.subheader("SEGUNDA MISIÓN:")
 			st.subheader('Resuelve el siguiente acertijo y continúa a la siguiente fase: Una persona vive en una casa redonda, rodeada por completo por ventanas. Por cualquier lugar por donde mire siempre ve al sur. ¿De qué color es el oso?')
 			input_string2 = st.text_input("Tu respuesta a la misión 2")
+			input_string2 = input_string2.lower()
+
 			if input_string2=='blanco':
 				st.subheader('Fantástico. Estás cerca de obtener la información que necesitas para ser un oficial adaptado a las condiciones del S. XXI. Ahora viene la última prueba')
 				st.subheader("TERCERA MISIÓN:")
@@ -57,6 +60,8 @@ def main():
 				st.subheader("Gente que tenía que moverse para '_ _ _ _ _ _'")
 
 				input_string3 = st.text_input("Tu respuesta a la misión 3")
+				input_string3 = input_string3.lower()
+
 				if input_string3=='pensar':
 					st.subheader('Maravilloso, has completado las tres pruebas. Te has hecho acreedor/a a la llave final.')
 					st.subheader(' ')
