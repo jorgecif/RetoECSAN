@@ -60,7 +60,7 @@ def main():
 				if input_string3=='pensar':
 					st.subheader('Maravilloso, has completado las tres pruebas. Te has hecho acreedor/a a la llave final.')
 					st.subheader(' ')
-					st.markdown('Ingresa a <a href="https://www.youtube.com">https://www.youtube.com</a>  el viernes 5 de marzo a las 4:00 pm y te enterarás cómo convertir tu investigación de grado en un proyecto de innovación.', unsafe_allow_html=True)
+					st.markdown('Ingresa a <a href="https://youtu.be/zTY2gveh4zQ">https://youtu.be/zTY2gveh4zQ</a>  el viernes 5 de marzo a las 4:00 pm y te enterarás cómo convertir tu investigación de grado en un proyecto de innovación.', unsafe_allow_html=True)
 					st.image(logo_largo, use_column_width=True)
 					st.balloons()
 
